@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 import string
-for i in string.ascii_lowercase:
-    print(i, end = "")
+for letter in string.ascii_lowercase:
+    print(letter.format(string.ascii_lowercase), end="")
