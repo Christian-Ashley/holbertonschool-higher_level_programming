@@ -4,6 +4,6 @@ def new_in_list(my_list, idx, element):
         buffer_list = []
         for num in my_list:
             buffer_list.append(num)
-            if not idx < 0 and not idx >= len(my_list):
+        if not idx < 0 and not idx >= len(my_list):
             buffer_list[idx] = element
         return buffer_list
