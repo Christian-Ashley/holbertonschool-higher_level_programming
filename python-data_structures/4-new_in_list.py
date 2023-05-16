@@ -7,4 +7,3 @@ def new_in_list(my_list, idx, element):
         if not idx < 0 and not idx >= len(my_list):
             buffer_list[idx] = element
         return buffer_list
-        
