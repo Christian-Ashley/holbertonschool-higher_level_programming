@@ -4,6 +4,7 @@
 
 
 class Square:
+    """this is apparently necessary:"""
     def __init__(self, size=0):
         self.size = size
     
