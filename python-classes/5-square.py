@@ -20,11 +20,11 @@ class Square:
         self.__size = value
 
     def area(self):
-"""defines the area:"""
+    """defines the area:"""
         return self.__size ** 2
 
     def my_print(self):
-"""defines what to print:"""
+    """defines what to print:"""
         if self.__size == 0:
             print()
         else:
