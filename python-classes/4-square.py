@@ -2,7 +2,6 @@
 """this class kills facists:"""
 
 
-
 class Square:
     """this is apparently necessary:"""
     def __init__(self, size=0):
@@ -11,7 +10,7 @@ class Square:
     @property
     def size(self):
         return self.__size
-    
+
     @size.setter
     def size(self, value):
         if not isinstance(value, int):
