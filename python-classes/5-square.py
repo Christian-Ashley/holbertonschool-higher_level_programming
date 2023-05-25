@@ -2,8 +2,6 @@
 """this class kills facists:"""
 
 
-Sure, I'd be happy to add some documentation! Here's the updated implementation with documentation included:
-
 class Square:
     """
     Represents a square with a size attribute and methods to calculate its area and print it.
