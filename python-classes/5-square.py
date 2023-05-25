@@ -4,7 +4,8 @@
 
 class Square:
     """
-    Represents a square with a size attribute and methods to calculate its area and print it.
+    Represents a square with a size attribute and methods to calculate its area and print 
+    it.
     """
     def __init__(self, size=0):
         """
