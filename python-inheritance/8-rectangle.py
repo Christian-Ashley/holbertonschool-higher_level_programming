@@ -3,7 +3,7 @@
 
 
 class BaseGeometry:
-    "class defines BaseGeometry"
+    """class defines BaseGeometry"""
     def area(self):
         """Public Instance Method: Area"""
         raise Exception("area() is not implemented")
