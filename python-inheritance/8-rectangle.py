@@ -1,15 +1,25 @@
 #!/usr/bin/python3
-"""empty class called BasseGeometry"""
+"""
+class that inherits from BaseGeometry-7
+instantiate width and height
+width and height are private
+width and height must be positive ints, validated by integer_validator
+AAAAHHH okay here i go
+"""
 
 
-class BaseGeometry:
-    """class defines BaseGeometry"""
-    def area(self):
-        """Public Instance Method: Area"""
-        raise Exception("area() is not implemented")
-    def integer_validator(self, name, value):
-        """Public Instance Method: Integer Validator"""
-        if type(value) is not int:
-            raise TypeError("{} must be an integer".format(name))
-        if value <= 0:
-            raise ValueError("{} must be greater than 0".format(name))
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+
+class Rectangle(BaseGeometry):
+    """
+    Defines Rectangle Class
+    """
+    def __init__(self, width, height):
+        """
+        init method
+        """
+        self.integer_validator("width", width)
+        self.integer_validator("height", height)
+        self.__width = width
+        self.__height = height
