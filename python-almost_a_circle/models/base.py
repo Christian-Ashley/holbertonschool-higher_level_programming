@@ -1,15 +1,23 @@
-#!/usr/bin/pyhton3
+#!/usr/bin/python3
+""" Base class """
+import json
 
-# models/__init__.py - empty file to mark directory as package
-
-# models/base.py - contains Base class
 
 class Base:
+    """ Base class """
     __nb_objects = 0
-    
+
     def __init__(self, id=None):
         if id is not None:
+            """
+            if a number is passed in as argument i.e. <Base(12)>
+            assign that number as the public instance attribute id
+            """
             self.id = id
         else:
-            self.__class__.__nb_objects += 1
-            self.id = self.__class__.__nb_objects
+            """
+            Increment __nb_objects and assign the new value to the public
+            instance attribute id
+            """
+            Base.__nb_objects += 1
+            self.id = Base.__nb_objects
