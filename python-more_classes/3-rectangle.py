@@ -62,6 +62,6 @@ class Rectangle:
                     string += '#'
                 if row < self.height - 1:
                     string += '\n'
-                return string
-            else:
-                return string
+            return string
+        else:
+            return string
