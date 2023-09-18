@@ -4,6 +4,7 @@
 
 class Rectangle:
     """ A class that defines a Rectangle"""
+    number_of_instances = 0
 
     def __init__(self, width=0, height=0):
         """
@@ -17,6 +18,7 @@ class Rectangle:
         """
         self.height = height
         self.width = width
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -43,18 +45,18 @@ class Rectangle:
         self.__height = value
 
     def area(self):
-        """Returns the area of rectangle"""
+        """Return the area of the rectangle"""
         return self.width * self.height
 
     def perimeter(self):
-        """Returns the perimiter of the rectangle"""
+        """Returns the perimeter of the rectangle"""
         if self.width > 0 and self.height > 0:
             return (self.width * 2) + (self.height * 2)
         else:
             return 0
 
     def __str__(self):
-        """prints string representation of rectangle"""
+        """Prints string representation of rectangle"""
         string = ""
         if self.width > 0 and self.height > 0:
             for row in range(self.height):
@@ -70,10 +72,6 @@ class Rectangle:
         """Return literal string representation"""
         return "Rectangle(" + str(self.__width) + ", " + str(self.__height) +\
             ")"
-
-    def __del__(self):
-        """Prints after deletion"""
-        print("Bye rectangle...")
 
     def __del__(self):
         """Prints after deletion"""
