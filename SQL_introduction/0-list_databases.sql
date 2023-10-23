@@ -1,2 +1,2 @@
---lists databases go figure
+-- lists databases go figure
 SHOW databases;
