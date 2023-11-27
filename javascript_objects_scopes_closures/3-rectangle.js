@@ -1,12 +1,12 @@
 #!/usr/bin/node
 // Rectangle class with constructor and print method
 class Rectangle {
-    constructor (w, h) {
-      if (w >= 1 && h >= 1 && w !== undefined && h !== undefined) {
-        this.width = w;
-        this.height = h;
-      }
+  constructor (w, h) {
+    if (w >= 1 && h >= 1 && w !== undefined && h !== undefined) {
+    this.width = w;
+    this.height = h;
     }
+}
   
     print () {
       for (let i = 0; i < this.height; i++) {
@@ -14,4 +14,4 @@ class Rectangle {
       }
     }
   }
-  module.exports = Rectangle;
+module.exports = Rectangle;
