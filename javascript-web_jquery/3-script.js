@@ -13,5 +13,5 @@ $(document).ready(function() {
 
     // add the class 'red' to header element
     headerElement.addClass("red");
-  })
-})
+  });
+});
